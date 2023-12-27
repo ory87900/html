@@ -1,0 +1,326 @@
+<html>
+
+  <head>
+
+
+    <title>computer-system</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>        
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                rtl: true
+            });
+        });
+    </script>
+    <style>
+      * {
+        margin: 0;
+        width: ;
+        color: orange;
+        /*font-size: 50px;*/
+        text-align: center;
+      }
+
+      /* top */
+      .top {
+        background-color: #998;
+      }
+
+      .top .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+      }
+
+      .top .logo {
+        /*border:1px solid red;*/
+        font-size: 35px;
+        font-weight: bold;
+      }
+
+      .top .logo img {
+        width: 100px;
+        vertical-align: middle;
+      }
+
+      .top .top-nav {
+        /*border:1px solid red;*/
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .top .top-nav a {
+        text-decoration: none;
+      }
+
+      /* nav */
+      .nav {
+        background-color: #222;
+        display: flex;
+        justify-content: center;
+      }
+
+      .nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #222;
+      }
+
+      .nav li {
+        float: left;
+      }
+
+      .nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .nav li a:hover {
+        background-color: #476;
+      }
+
+      /*下拉式選單*/
+      .dropdown:hover .dropdown-content {
+        display: block;
+
+        /*使用block呈現上下排列*/
+      }
+
+      li.dropdown:hover {
+        background-color: #333;
+        /*設定背景顏色*/
+      }
+
+      .dropdown-content {
+        /*設定下拉選單內容格式*/
+        display: none;
+        position: absolute;
+        background-color: #333;
+        min-width: 160px;
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        /*設定下拉選單連結內容格式*/
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      /* slider */
+      .slider {
+        background-color: black;
+
+      }
+
+      /* banner*/
+      .banner {
+        color: blue;
+        background-image: linear-gradient(#284, #256);
+        color: blue;
+        padding: 30px;
+
+      }
+
+      /*faculty*/
+      faculty {
+        display: block;
+        justify-content: center;
+        background-color: white;
+        padding: 20px;
+      }
+
+      .faculty h2 {
+        font-size: 25px;
+        color: rgb(50, 51, 52);
+        padding-bottom: 40px;
+      }
+
+      .faculty .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /*border:1px solid red;*/
+      }
+
+      .faculty .teacher {
+        /*border:1px solid blue;*/
+        display: block;
+        text-decoration: none;
+      }
+
+      .faculty .teacher img {
+        height: 200px;
+        width: 200px;
+      }
+
+      .faculty .teacher h3 {
+        color: White;
+        background-color: rgba(39, 40, 34, .500);
+        text-align: center;
+      }
+
+      .contact {
+        display: block;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .contact h2 {
+        color: rgb(54, 82, 110);
+        font-size: 25px;
+      }
+
+      .contact .infos {
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+      }
+
+      .contact .infos .left {
+        display: block;
+        text-align: left;
+        margin-right: 30px;
+      }
+
+      .contact .infos .left b {
+        display: block;
+        text-align: left;
+        margin-top: 10px;
+        text-decoration: bold;
+        color: Gray;
+        font-size: 18px;
+        line-height: 18px;
+      }
+
+      .contact .infos .left span {
+        display: block;
+        text-align: left;
+        margin-top: 10px;
+        color: rgba(39, 40, 34, 0.5);
+        font-size: 16px;
+        padding-left: 27px;
+      }
+
+      .contact .infos .right {
+        height: 200px;
+      }
+
+      .contact .infos .right iframe {
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgba(39, 40, 34, 0.50);
+      }
+
+      /*footer*/
+      .footer {
+        background-color: black;
+        height: 46px;
+      }
+
+      body {
+        height: 100% font-family: "微軟正黑體", "Arial", "Times New Roman";
+
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="top">
+      <div class="container">
+        <div class="logo">
+          <img src="https://raw.githubusercontent.com/ory87900/202312---HTML/2ea3fe7d0cdff580729409a4ee095267d89e02aa/computer-system-high-resolution-logo-transparent.png">
+          電腦系統建置
+        </div>
+        <div class="top-nav">
+          <a href=>電腦系統</a>
+          <a href=>BIOS設定</a>
+          <a href=>FAQ</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="#home">首頁</a></li>
+        <li><a href="#introduction">還原系統簡介</a></li>
+        <li class="dropdown"><a href="#faculty">系統簡介</a>
+          <div class="dropdown-content">
+            <a href="#">Windows</a>
+            <a href="#">Linux</a>
+            <a href="#">Ubuntu</a>
+          </div>
+        </li>
+        <li><a href="#about">相關資訊</a></li>
+      </ul>
+    </div>
+    <div class="slider">
+      <div class="flexslider">
+        <ul class="slides">
+          <li><img src="https://github.com/ory87900/202312---HTML/blob/c444a6102c9d42ff8e2ccfd915c195387b1adf12/sb-1076444-9%20(2).jpg?raw=true" /></li>
+          <li><img src="https://learn.microsoft.com/zh-tw/education/windows/images/windows-11-se.png" /></li>
+          <li><img src="https://github.com/ory87900/202312---HTML/blob/c444a6102c9d42ff8e2ccfd915c195387b1adf12/gnulinux_cdo_2022_3810_screenshot_f.jpg?raw=true" /></li>
+        </ul>
+      </div>
+    </div>
+    <div class="banner">
+      <h1>服務理念</h1>
+      <h1>
+        客戶評價
+      </h1>
+      <h1>
+        了解更多
+      </h1>
+    </div>
+    <div class="faculty">
+      <div class="container">
+        <a class="teacher" href="">
+          <img src="https://github.com/ory87900/202312---HTML/blob/main/windows.png?raw=true" />
+          <h3>Windows</h3>
+        </a>
+        <a class="teacher" href="">
+          <img src="https://icon-library.com/images/linux-icon-vector/linux-icon-vector-19.jpg" />
+          <h3>Ubuntu</h3>
+        </a>
+        <a class="teacher" href="">
+          <img src="https://icon-library.com/images/ubuntu-icon/ubuntu-icon-22.jpg" />
+          <h3>Unix</h3>
+        </a>
+      </div>
+    </div>
+    <div class="contact" id="about">
+      <h2>聯絡資訊</h2>
+      <div class="infos">
+        <div class="left">
+          <b>明新科技大學管理學院大樓二樓</b>
+          <span>304新竹縣新豐鄉新興路1號</span>
+          <b> 電話:03-5593142</b>
+          <span>分機:3431、3432、3433</span>
+          <b> 傳真:03-5593142</b>
+          <span>分機:3440</span>
+        </div>
+        <div class="right">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3044.185885150929!2d120.98912333466727!3d24.86332844316392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34683154faa8283b%3A0x92cb1c5564a574ef!2z5piO5paw56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1536665837954" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      &copy;Copyright 2023 Department of Information Management, Computer-System. All rights reserved. 維護者 Ling Kuan (B11090085)
+    </div>
+  </body>
+
+</html>
